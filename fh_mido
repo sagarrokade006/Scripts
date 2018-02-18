@@ -41,3 +41,20 @@ cd device/xiaomi/mido
 git fetch https://github.com/Adesh15/device_xiaomi_mido.git rr
 git cherry-pick d7148241d1035c9325744d52a20f30fd5efeb7ba^..694e54a61ae3382b4f846616e1d21517372c4327
 git cherry-pick 35c489fefe75b98c1ae11ec4b6cf167ef554982f
+
+cd ../../..
+rm -rf hardware/qcom/power
+
+git clone https://github.com/LineageOS/android_packages_apps_Camera2 -b lineage-15.1 packages/apps/Camera2
+
+rm -rf packages/apps/Snap 
+
+#Building 
+. build/env*
+ccache -M 50G
+export USE_CCACHE=1
+export FH_RELEASE=true
+export KBUILD_BUILD_HOST=firebreak
+export DISABLE_CNM=true
+
+brunch mido
