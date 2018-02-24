@@ -1,0 +1,4 @@
+#!/bin/sh
+git clone https://github.com/deadman96385/android_device_xiaomi_tissot.git -b cm-14.1 device/xiaomi/mido
+git clone https://github.com/ghpranav/android_vendor_xiaomi_tissot.git -b cm-14.1 vendor/xiaomi/tissot
+git clone https://github.com/IamJoker03/android_kernel_xiaomi_msm8953.git -b tissot kernel/xiaomi/msm8953
