@@ -1,6 +1,6 @@
 #Device specific BLOBS 
 git clone https://github.com/IamJoker03/android_device_xiaomi_mido.git -b fh_mr1 device/xiaomi/mido
-git clone https://github.com/IamJoker03/android_kernel_xiaomi_msm8953.git -b nucleon_oreo kernel/xiaomi/msm8953
+git clone https://github.com/IamJoker03/android_kernel_xiaomi_msm8953.git -b dev/r1 kernel/xiaomi/msm8953
 git clone https://github.com/IamJoker03/proprietary_vendor_xiaomi.git -b mr1 vendor/xiaomi 
 
 #VoLTE Shit 
@@ -25,36 +25,9 @@ git clone https://github.com/IamJoker03/hardware_qcom_display.git -b oreo-8996 h
 rm -rf hardware/qcom/media-caf 
 git clone https://github.com/IamJoker03/hardware_qcom_media.git -b oreo-8996 hardware/qcom/media-caf/msm8996
 
-cd frameworks/base 
-git fetch https://github.com/IamJoker03/android_frameworks_base.git ims
-git cherry-pick 1216b3864751c0f208e375da7f7af5497cfe0e5f^..724081bf8ec1d50a3e3149c96b8d96334d1e3717 
-
-cd ../..
-
-cd packages/services/Telephony
-git fetch https://github.com/IamJoker03/android_packages_services_Telephony.git ims
-git cherry-pick 88a90eb05b6ccb4d7d630f518d27ba4f35e32301 
-
-cd ../../..
-
-cd device/xiaomi/mido
-git fetch https://github.com/Adesh15/device_xiaomi_mido.git rr
-git cherry-pick d7148241d1035c9325744d52a20f30fd5efeb7ba^..694e54a61ae3382b4f846616e1d21517372c4327
-git cherry-pick 35c489fefe75b98c1ae11ec4b6cf167ef554982f
-
 cd ../../..
 rm -rf hardware/qcom/power
 
 git clone https://github.com/LineageOS/android_packages_apps_Camera2 -b lineage-15.1 packages/apps/Camera2
 
 rm -rf packages/apps/Snap 
-
-#Building 
-. build/env*
-ccache -M 50G
-export USE_CCACHE=1
-export FH_RELEASE=true
-export KBUILD_BUILD_HOST=firebreak
-export DISABLE_CNM=true
-
-brunch mido
