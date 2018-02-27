@@ -1,5 +1,5 @@
 #Device specific BLOBS 
-git clone https://github.com/IamJoker03/android_device_xiaomi_mido.git -b fh_mr1 device/xiaomi/mido
+git clone https://github.com/IamJoker03/android_device_xiaomi_mido.git -b fh device/xiaomi/mido
 git clone https://github.com/IamJoker03/android_kernel_xiaomi_msm8953.git -b dev/r1 kernel/xiaomi/msm8953
 git clone https://github.com/IamJoker03/proprietary_vendor_xiaomi.git -b mr1 vendor/xiaomi 
 
@@ -25,7 +25,6 @@ git clone https://github.com/IamJoker03/hardware_qcom_display.git -b oreo-8996 h
 rm -rf hardware/qcom/media-caf 
 git clone https://github.com/IamJoker03/hardware_qcom_media.git -b oreo-8996 hardware/qcom/media-caf/msm8996
 
-cd ../../..
 rm -rf hardware/qcom/power
 
 git clone https://github.com/LineageOS/android_packages_apps_Camera2 -b lineage-15.1 packages/apps/Camera2
