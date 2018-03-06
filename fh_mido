@@ -1,6 +1,6 @@
 #Device specific BLOBS 
-git clone https://github.com/IamJoker03/android_device_xiaomi_mido.git -b fh device/xiaomi/mido
-git clone https://github.com/IamJoker03/android_kernel_xiaomi_msm8953.git -b dev/r1 kernel/xiaomi/msm8953
+git clone https://github.com/IamJoker03/android_device_xiaomi_mido.git -b oreo-mr1 device/xiaomi/mido
+git clone https://github.com/TeamHavok/Omniverse_mido.git -b oreo-mr1 kernel/xiaomi/msm8953
 git clone https://github.com/IamJoker03/proprietary_vendor_xiaomi.git -b mr1 vendor/xiaomi 
 
 #VoLTE Shit 
@@ -31,12 +31,5 @@ git clone https://github.com/LineageOS/android_packages_apps_Camera2 -b lineage-
 
 rm -rf packages/apps/Snap 
 
-cd frameworks/base
-git fetch https://github.com/IamJoker03/android_frameworks_base ims
-git cherry-pick 6199465a1059f6ccb7fb93a2261537aa8993da1c^..762e3e2f8f95961c2f61ff6d5244ee12d70ca4ed
-cd ../..
-
-cd packages/services/Telephony
-git fetch https://github.com/IamJoker03/android_packages_services_Telephony ims 
-git cherry-pick 88a90eb05b6ccb4d7d630f518d27ba4f35e32301
+git clone https://gitlab.com/PixelExperience/prebuilts_gcc_linux-x86_aarch64_aarch64-linaro-7.2.git prebuilts/gcc/linux-x86/aarch64/aarch64-linaro-7.2
 
