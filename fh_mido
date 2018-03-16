@@ -1,6 +1,6 @@
 #Device specific BLOBS 
 git clone https://github.com/IamJoker03/android_device_xiaomi_mido.git -b oreo-mr1 device/xiaomi/mido
-git clone https://github.com/niikhill/Omniverse_mido.git -b omniverse kernel/xiaomi/msm8953
+git clone https://github.com/niikhill/Omniverse_mido.git -b Omniverse kernel/xiaomi/msm8953
 git clone https://github.com/IamJoker03/proprietary_vendor_xiaomi.git -b mr1 vendor/xiaomi 
 
 #VoLTE Shit 
