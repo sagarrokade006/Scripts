@@ -25,5 +25,12 @@ git clone https://github.com/IamJoker03/hardware_qcom_display.git -b oreo-8996 h
 rm -rf hardware/qcom/media-caf 
 git clone https://github.com/IamJoker03/hardware_qcom_media.git -b oreo-8996 hardware/qcom/media-caf/msm8996
 git clone https://github.com/IamJoker03/hardware_qcom_media.git -b oreo-8996 hardware/qcom/media/msm8996
+
+git clone https://gitlab.com/PixelExperience/prebuilts_gcc_linux-x86_aarch64_aarch64-linaro-7.2.git prebuilts/gcc/linux-x86/aarch64/aarch64-linaro-7.2
+
 # Custom Vendor
 git clone https://github.com/IamJoker03/vendor_joker.git vendor/joker
+
+export KBUILD_BUILD_HOST=Madstuff
+export KBUILD_BUILD_USER=SagarRokade
+
