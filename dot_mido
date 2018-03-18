@@ -1,7 +1,7 @@
 #Device specific BLOBS 
 git clone https://github.com/sagarrokade006/android_device_xiaomi_mido.git -b oreo-mr1 device/xiaomi/mido
 git clone https://github.com/sagarrokade006/Omniverse_mido.git -b Omniverse kernel/xiaomi/msm8953
-git clone https://github.com/sagarrokade006/vendor_mido.git -b mr1 vendor/xiaomi 
+git clone https://github.com/sagarrokade006/vendor_mido.git -b oreo-mr1 vendor/xiaomi 
 
 #VoLTE  
 rm -rf vendor/qcom/opensource/dataservices
