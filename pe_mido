@@ -14,7 +14,7 @@ git clone https://github.com/IamJoker03/hardware_qcom_media.git -b oreo-8996 har
 rm -rf hardware/qcom/media
 git clone https://github.com/IamJoker03/hardware_qcom_media.git -b oreo-8996 hardware/qcom/media/msm8996
 git clone https://github.com/IamJoker03/hardware_qcom_media.git -b oreo-8996 hardware/qcom/media-caf/msm8937
-git clone https://github.com/IamJoker03/hardware_qcom_media.git -b oreo-8996 hardware/qcom/media/msm893
+git clone https://github.com/IamJoker03/hardware_qcom_media.git -b oreo-8996 hardware/qcom/media/msm8937
 
 git clone https://gitlab.com/PixelExperience/prebuilts_gcc_linux-x86_aarch64_aarch64-linaro-7.2.git prebuilts/gcc/linux-x86/aarch64/aarch64-linaro-7.2
 
