@@ -1,7 +1,7 @@
 #DEVICE
 
 git clone https://github.com/merothh/bootleg_device_xiaomi_mido -b oreo.1 device/xiaomi/mido
-git clone https://github.com/dotOS-Devices/android_kernel_xiaomi_msm8953 -b dot-o kernel/xiaomi/msm8953
+git clone https://github.com/Adesh15/android_kernel_xiaomi_msm8953 -b oreo kernel/xiaomi/msm8953
 git clone https://github.com/AospExtended-Devices/vendor_xiaomi_mido -b 8.1.x vendor/xiaomi
 
 #HALS
